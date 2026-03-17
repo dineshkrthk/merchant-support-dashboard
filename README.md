@@ -137,8 +137,6 @@ merchant-support-app/
 
 ## Architecture Overview
 
-This project follows a **layered modular architecture**.
-
 ### Backend Layers
 
 * **Routes**: define API endpoints
@@ -154,73 +152,6 @@ This project follows a **layered modular architecture**.
 * **Components**: reusable UI pieces
 * **API Layer**: centralized backend communication
 * **Constants**: shared frontend enums and options
-
----
-
-## Why This Architecture Was Chosen
-
-This architecture was selected because it provides:
-
-* clear separation of concerns
-* better maintainability
-* easier debugging
-* cleaner scalability for future features
-* an enterprise-style modular structure
-
-It is more structured than a simple MVC-only implementation, while still staying practical and not overengineered for the scope of this assessment.
-
----
-
-## Other Possible Architectures
-
-This application could also be implemented using:
-
-### 1. Basic MVC Architecture
-
-* Routes
-* Controllers
-* Models / Data layer
-
-Good for smaller apps, but less scalable for larger systems.
-
-### 2. Feature-Based Modular Architecture
-
-Organize everything by feature, such as:
-
-* tickets/
-* shared/
-
-Useful for larger products with many business modules.
-
-### 3. Clean Architecture
-
-Separate domain, use cases, interfaces, and infrastructure.
-
-Very scalable, but too heavy for a small assessment project like this.
-
-### Chosen Approach
-
-For this application, the best fit was a **layered modular architecture**, because it balances:
-
-* simplicity
-* professionalism
-* scalability
-* readability
-
----
-
-## Why JSON File Storage Was Used
-
-This project uses a JSON file for persistence instead of a database.
-
-### Reasons
-
-* simple setup
-* no external database dependency
-* easy to run and evaluate locally
-* suitable for the assessment scope
-
-This choice keeps the project lightweight while still preserving data across server restarts.
 
 ---
 
